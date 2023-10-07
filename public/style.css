@@ -1,0 +1,12 @@
+h1 {
+    color:red;
+}
+.greenStyles{
+    background-color:green;
+    color:white;
+    font-family:arial;
+    
+    text-align:justify;
+    width:40%;
+    margin:5px;
+}
