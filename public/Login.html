@@ -29,25 +29,16 @@
             </div>
         </div>
     </form>
-    
 
-    
-    <form id="frm1">
-    UserName:<input type="text" id="txtUsername" value="" "><br >
-    Password:<input type="password" id="txtPassword" value=""><br >
-    <input type="checkbox" id="chk1">Remember Me <br>
-    <br /><br />
-    <input type="button" id="btnLogin" value="Login"/>
-    <div id="div1"></div><br>
-    <div id="div2"></div>
-</form> 
 <script language="javascript">
     function checkLogin(){
         var username=document.getElementById("txtUsername").value;
         var password=document.getElementById("txtPassword").value;
         if (username=="username1" && password=="password1")
         {
-            window.location.href = "success.html";
+            alert("Success");
+            //window.location.href = "success.html";
+            window.location.redirect = "success.html";
         }
         else
         {
