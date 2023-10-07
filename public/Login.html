@@ -1,5 +1,6 @@
+<body>
 <form id="frm1">
-    User Name:<input type="text" id="txtUsername" value="" ><br >
+    User Name:<input type="text" id="txtUsername" value="" onblur="checkUsername()"><br >
     User Email:<input type="text" id="txtEmail" value=""><br >
     <input type="checkbox" id="chk1">Remember Me <br>
     <select  id="selectUser">
@@ -10,4 +11,15 @@
     <div id="div1"></div><br>
     <div id="div2"></div>
 </form> 
-    
+<script language="javascript">
+    function checkLogin(){
+        alert("Btn is clicked");
+    }
+
+    function checkUsername(){
+        var username=document.getElementById("txtUsername").value;
+        if (username.length<6)
+        alert("Username should be of min. six char(s)");
+    }
+</script>
+</body>    
