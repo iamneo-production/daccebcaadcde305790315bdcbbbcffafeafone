@@ -1,7 +1,7 @@
 <body>
 <form id="frm1">
     UserName:<input type="text" id="txtUsername" value="" onblur="checkUsername()"><br >
-    Password:<input type="password" id="txtPassword value=""><br >
+    Password:<input type="password" id="txtPassword" value=""><br >
     <input type="checkbox" id="chk1">Remember Me <br>
     <br /><br />
     <input type="button" id="btnLogin" value="Login" onclick="checkLogin()"/>
@@ -12,10 +12,8 @@
     function checkLogin(){
         var username=document.getElementById("txtUsername").value;
         var password=document.getElementById("txtPassword").value;
-        alert("Login clicked")
         if (username=="username1" && password=="password1")
         {
-            alert("Hi")
             window.location.href = "success.html";
         }
         else
